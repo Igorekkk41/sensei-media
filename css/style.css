@@ -1313,12 +1313,8 @@ body._lock footer{
 }
 
 
-.popup__input:last-child{
+.popup__input-number{
     margin-bottom: 0;
-}
-.popup__input::placeholder{
-    font-size: 17px;
-    vertical-align: middle;
 }
 .popup__form__btn{
     max-width: 100%;
