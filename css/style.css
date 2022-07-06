@@ -1256,7 +1256,7 @@ body._lock footer{
     color: #000;
     margin-bottom: 5px;
 }
-.popup__input{
+.popup__input-name, .popup__input-number{
     max-width: 100%;
     padding: 5px 0px 10px 0px;
     margin: 0px 0px 20px 0px;
@@ -1294,10 +1294,25 @@ body._lock footer{
     transition: top 0.2s;
     color: rgb(94, 93, 93);
 }
-.popup__input:focus ~ .label-for-name, .popup__input:valid ~ .label-for-name{
-    top: -12px;
+.popup__input-name:focus ~ .label-for-name, .popup__input-name:valid ~ .label-for-name{
+    top: -13px;
     font-size: 14px;
 }
+
+.label-for-number{
+    position: absolute;
+    top: 62px;
+    left: 0;
+    font-size: 17px;
+    transition: top 0.2s;
+    color: rgb(94, 93, 93);
+}
+.popup__input-number:focus ~ .label-for-number, .popup__input-number:valid ~ .label-for-number{
+    top: 44px;
+    font-size: 14px;
+}
+
+
 .popup__input:last-child{
     margin-bottom: 0;
 }
