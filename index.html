@@ -1,357 +1,1386 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" href="build/css/intlTelInput.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Sensei Media</title>
-</head>
-<body>
-    <div class="wrapper">
-    <header id="header" class="header lock-padding">
-        <div class="header__container">
-            
-                <img src="img/logo2.png" alt="logo" class="header__logo">
+/* Обнуления */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
 
-                <div class="header__menu menu">
-                    <div class="menu__icon">
-                        <span></span>
-                    </div>
-                    <nav class="menu__body">
-                        <ul class="menu__list">
-                            <li class="menu__link"><a href="">Главная</a></li>
-                            <li class="menu__link"><a href="">Услуги</a></li>
-                            <li class="menu__link"><a href="">Наши работы</a></li>
-                            <li class="menu__link"><a href="">Контакты</a></li>
-                            
-                        </ul>
-                        <a href="#popup" class="main__header__button popup-link">Заказать звонок <i class="mdi mdi-phone-in-talk"></i></a>
-                    </nav>           
-                </div>       
-        </div>
-    </header>
-    <section class="main-page">
-        <div class="container">
-            <div class="main-page__wrapper">
-                <div class="main-page__content">
-                    <h1>Студия дизайна <br><span>полного цикла</span></h1>
-                    <p>От дизайна визиток до дизайна сайтов</p>
+a{
+    text-decoration: none;
+    color: white;
+}
 
-                    <button href="#" class="main-page__content__link">Комплексные решения</button>
-                    <button href="#" class="main-page__content__link">Логотипы</button>
-                    <button href="#" class="main-page__content__link">Дизайн</button>       
-                </div>
+ul, ol, li{
+    list-style: none;
+}
 
-                <img src="img/undraw_mobile_wireframe_re_jxui 1.png" alt="main_img" class=""> 
-            </div>
-        </div>    
-    </section>
+img{
+    vertical-align: top;
+}
 
-    <section class="about-us">
-        <div class="container">
-            <div class="about-us__block">
-                <h2 class="about-us__title">Мы знаем толк в дизайне</h2>
-                <div class="about-us__block__wrapper">
-                    <div class="about-us__characteristic">
-                        <h3>6 лет</h3>
-                        <p>В сфере рекламы</p>
-                    </div>
+h1, h2, h3, h4, h5, h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+/* ----Шрифты---------------------- */
+@font-face {
+    font-family: 'Manrope-Extra-Light';
+    src: url(../fonts/Manrope-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'Manrope-Light';
+    src: url(../fonts/Manrope-Light.ttf);
+}
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url(../fonts/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family: 'Manrope-Medium';
+    src: url(../fonts/Manrope-Medium.ttf);
+}
+@font-face {
+    font-family: 'Manrope-SemiBold';
+    src: url(../fonts/Manrope-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url(../fonts/Manrope-Bold.ttf);
+}
+@font-face {
+    font-family: 'Manrope-ExtraBold';
+    src: url(../fonts/Manrope-ExtraBold.ttf);
+}
 
-                    <div class="about-us__characteristic">
-                        <h3><span>более</span> 100</h3>
-                        <p>Наших постоянных клиентов</p>
-                    </div>
 
-                    <div class="about-us__characteristic">
-                        <h3>+20%</h3>
-                        <p>Конверсия продаж</p>
-                    </div>
-
-                    <div class="about-us__characteristic">
-                        <h3>-70%</h3>
-                        <p>Ошибок менеджеров</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="our-services">
-        <div class="container">
-            <h2 class="">Наши услуги</h2>
-            <div class="our-services__block">
-                
-                <div class="our-services__wrapper">
-                    <h3>Рекламные материалы</h3>
-                    <div class="our-services__item">
-                            <ul class="services-list">
-                                <li>Верстка макетов</li>
-                                <li>Флаеры</li>
-                                <li>Визитки</li>
-                                <li>Брошюры</li>
-                                <li>Листовки</li>
-                                <li>Визитки</li>
-                                <li>Брошюры</li>
-                                <li>Листовки</li>
-                            </ul>
-                           <p>от<span> 2000 грн.</span></p>
-                    </div>
-                    <a class="main__button">Подробнее</a>
-                </div>
-
-                <div class="our-services__wrapper">
-                    <h3>Бренд и дизайн</h3>
-                    <div class="our-services__item">
-                                <ul class="services-list">
-                                <li>Логотипы</li>
-                                <li>Фирменный стиль</li>
-                                <li>Айдентика</li>
-                                <li>Концепция бренда</li>
-                                <li>Гайдлайн</li>                               
-                            </ul>
-                          <p>от<span> 3000 грн.</span></p>
-                    </div>
-                    <a class="main__button">Подробнее</a>
-                </div>
-                <div class="our-services__wrapper">
-                    <h3>Дизайн вывесок и рекламы</h3>
-                    <div class="our-services__item">
-                        
-                        
-                            <ul class="services-list">
-                                <li>Дизайн вывесок</li>
-                                <li>Фотопривязки</li>
-                                <li>Роллапы</li>
-                            </ul>
-
-                           <p>от<span> 3000 грн.</span></p>
-                        
-                    </div>
-                    <a class="main__button">Подробнее</a>
-                </div>
-                <div class="our-services__wrapper">
-                    <h3>Digital дизайн</h3>
-                    <div class="our-services__item">
-                        
-                        
-                            <ul class="services-list">
-                                <li>WEB дизайн</li>
-                                <li>Креативы для рекламы</li>
-                                <li>Презентации</li>
-                            </ul>
-
-                           <p>от<span> 5000 грн.</span></p>
-                        
-                    </div>
-                    <a class="main__button">Подробнее</a>
-                </div>
-                <div class="our-services__wrapper">
-                    <h3>SMM</h3>
-                    <div class="our-services__item">
-                        
-                        
-                            <ul class="services-list">
-                                <li>Stories Instagram</li>
-                                <li>Post Instagram</li>
-                                <li>Оформление аккаунта</li>
-                                <li>Рекламные креативы</li>
-                                <li>Оформление группы</li>
-                            </ul>
-
-                            <p>от<span> 1500 грн.</span></p>
-                        
-                    </div>
-                    <a class="main__button">Подробнее</a>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <section class="consultation">
-        <div class="container">
-            <div class="consultation__wrapper">
-                <div class="consultation__text">
-                    <h2>Заказать консультацию специалиста</h2>
-                    <p>Заполните форму и мы свяжемся с вами в ближайшее время!</p>
-                    <form action="#" class="consultation-form">
-                        <div class="input__container">
-                            <div class="input__wrapper">
-                                <input type="text" name="name" required placeholder="Ваше имя" class="consultation-form__input">
-                                <input type="tel" name="phone" required placeholder="Номер вашего телефона" class="consultation-form__input">
-                            </div>
-                            <textarea name="question" id="" cols="30" rows="10" placeholder="Ваш вопрос" required></textarea>
-                        </div>
-                        <input type="checkbox" id="accept" class="input__checkbox" required><label for="accept" >Я согласен с условиями обработки персональных данных</label><br>
-                        <button class="main__button">Отправить</button>
-                    </form>
-                </div>
-                    <img src="img/Rectangle 7.jpg" alt="Rectangle">
-                </div>
-            </div>
-    </section>
-
-    <section class="our-works">
-        <div class="slider__container">
-            <h2>Наши работы</h2>
-            <div class="our-works__blocks slider">
-                <div class="our-works__item">
-                    <a href="https://russian.alibaba.com/" target="_blank"><img src="img/Alibaba Logo.png" alt="alibaba"></a>
-                    <p>Самая крупная в Финляндии компания по обработке камня и крупнейший в мире производитель теплоаккумулирующих печей каминов текст пример</p>
-
-                    <div class="our-works__results__block">
-                        <h3>Результат:</h3>
-                        <div class="our-works__result__wrapper">
-                            <div class="our-works__result">
-                                <h4>+ 85,71%</h4>
-                                <p>увеличение количества обращений с рекламы</p>
-                            </div>
-                            <div class="our-works__result">
-                                <h4>+ 85,71%</h4>
-                                <p>увеличение конверсии</p>
-                            </div>
-                            <div class="our-works__result">
-                                <h4>+ 85,71%</h4>
-                                <p>снижение стоимости за обращение</p>
-                            </div>
-                        </div>    
-                    </div>
-
-                    <h3 class="our-works__system">Системы:</h3>
-                   <a href="https://ads.google.com/intl/ru_ru/home/" target="_blank"><img src="img/logo-google-adwords 1.png" alt="logo-google"></a>
-                    <a href="https://direct.yandex.ru/" target="_blank"><img src="img/pasted-image-0-12 1.png" alt="lpasted"></a>
-                </div>
-
-                
-
-                <div class="our-works__item">
-                    <a href="https://www.macys.com/" target="_blank"><img src="img/MacysLogo.png" alt="alibaba" class="Macys"></a>
-                    <p>Самая крупная в Финляндии компания по обработке камня и крупнейший в мире производитель теплоаккумулирующих печей каминов текст пример</p>
-
-                    <div class="our-works__results__block">
-                        <h3 class="our-works__title">Результат:</h3>
-                        <div class="our-works__result__wrapper">
-                            <div class="our-works__result">
-                                <h4>+ 85,71%</h4>
-                                <p>увеличение количества обращений с рекламы</p>
-                            </div>
-                            <div class="our-works__result">
-                                <h4>+ 85,71%</h4>
-                                <p>увеличение конверсии</p>
-                            </div>
-                            <div class="our-works__result">
-                                <h4>+ 85,71%</h4>
-                                <p>снижение стоимости за обращение</p>
-                            </div>
-                        </div>    
-                    </div>
-
-                    <h3 class="our-works__system">Системы:</h3>
-                    <a href="https://ads.google.com/intl/ru_ru/home/" target="_blank"><img src="img/logo-google-adwords 1.png" alt="logo-google"></a>
-                    <a href="https://direct.yandex.ru/" target="_blank"><img src="img/pasted-image-0-12 1.png" alt="lpasted"></a>
-                </div>
-
-                <div class="our-works__item">
-                    <a href="https://russian.alibaba.com/" target="_blank"><img src="img/Alibaba Logo.png" alt="alibaba"></a>
-                    <p>Самая крупная в Финляндии компания по обработке камня и крупнейший в мире производитель теплоаккумулирующих печей каминов текст пример</p>
-
-                    <div class="our-works__results__block">
-                        <h3>Результат:</h3>
-                        <div class="our-works__result__wrapper">
-                            <div class="our-works__result">
-                                <h4>+ 85,71%</h4>
-                                <p>увеличение количества обращений с рекламы</p>
-                            </div>
-                            <div class="our-works__result">
-                                <h4>+ 85,71%</h4>
-                                <p>увеличение конверсии</p>
-                            </div>
-                            <div class="our-works__result">
-                                <h4>+ 85,71%</h4>
-                                <p>снижение стоимости за обращение</p>
-                            </div>
-                        </div>    
-                    </div>
-
-                    <h3 class="our-works__system">Системы:</h3>
-                   <a href="https://ads.google.com/intl/ru_ru/home/" target="_blank"><img src="img/logo-google-adwords 1.png" alt="logo-google"></a>
-                    <a href="https://direct.yandex.ru/" target="_blank"><img src="img/pasted-image-0-12 1.png" alt="lpasted"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-information">
-            <div class="container">
-                <div class="footer-information__block">
-                    <div class="feedback">
-                        <img src="img/logo2.png" alt="logo" class="header__logo">
-                        <p>Политика<br> конфиденциальности</p>
-                        <a href="#popup" class="main__button popup-link">Обратная связь</a>
-                    </div>
-
-                    <div class="footer-list information">
-                        <h2>Информация</h2>
-                        <ul class="footer_list">
-                            <li>Главная</li>
-                            <li>Услуги</li>
-                            <li>Наши работы</li>
-                            <li>Контакты</li>
-                        </ul>
-                    </div>
-                    <div class="footer-list services">
-                        <h2>Услуги</h2>
-                        <ul>
-                            <li>Реклама в интернете</li>
-                            <li>Дизайн вывесок и рекламы</li>
-                            <li>Дизайн сайтов на Тильде</li>
-                            <li>СММ</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="rights">
-            <div class="container">
-                <p>© 2022 Все права защиены</p>
-            </div>
-        </div>
-    </footer>
-</div>
-    <div id="popup" class="popup">
-        <div class="popup__body">
-            <div class="popup__content">
-                <a href="" class="popup__close close-popup"><img src="img/cross.png" alt=""></a>
-                <div class="popup__title">Оставьте заявку - мы подготовим предложение</div>
-                <div class="popup__text">
-                    <form action="" class="popup__form">
-                        <input type="text" name="name" id="popup__name" required class="popup__input name-input">
-                        <label for="popup__name" class="label-for-name">Имя</label>
-
-                        <label for="phone" class="popup__phone-label">Ваш телефон</label>
-                        <input type="tel" name="phone" placeholder="00 000 0000" required class="popup__input">
-                       
-
-                        <div class="popup__checkbox-form"><input type="checkbox" id="im_agree" required><label for="im_agree">Я согласен на обработку персональных данных</label></div>
-                        <button class="popup__form__btn">Отправить <span class="flare"></span></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+body{
+    font-family: 'Manrope-Medium';
+    color: #333333;
+    background-color: #F7F6FF;
+    overflow-x: hidden;
+}
+body._lock{
+    overflow: hidden;
     
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/burger.js"></script>
-    <script src="js/popup.js"></script>
-    <script src="js/animate.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/intlTelInput-jquery.min.js"></script>
-</body>
-</html>
+    /*! Отключает скролл при вклдюченом бургере */
+}
+body.lock{
+    overflow: hidden;
+}
+body._lock section{
+    filter: blur(0.35rem); /*Затемнение фона*/
+} 
+body._lock footer{
+    filter: blur(0.35rem); /*Затемнение фона*/
+} 
+/* --------------header-------- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.150);
+   
+}
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0px 30px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+}
+.header__logo {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+}
+.header__menu {
+}
+.menu {
+}
+.menu__icon {
+    display: none;
+}
+.menu__body {
+    display: flex;
+    align-items: center;
+}
+.menu__list {
+    flex-wrap: wrap;
+}
+.menu__list li{
+    transition: all 0.2s ease;
+}
+.menu__list > li{
+    position: relative;   
+    margin: 0px 0px 0px 20px;
+}
+
+
+
+.menu__link a{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+.menu__link a:hover{
+    
+    color: #b05bd1;
+}
+.menu__list li:hover{
+    transform: scale(1.1);
+}
+.main__button {
+    background: rgba(243,44,109,1);
+    background: -moz-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(243,44,109,1)), color-stop(100%, rgba(203,29,149,1)));
+    background: -webkit-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    background: -o-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    background: -ms-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    background: linear-gradient(to right, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f32c6d', endColorstr='#cb1d95', GradientType=1 );
+
+    border-radius: 9px;
+    padding: 12px 25px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.main__header__button{
+    background: rgba(243,44,109,1);
+    background: -moz-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(243,44,109,1)), color-stop(100%, rgba(203,29,149,1)));
+    background: -webkit-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    background: -o-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    background: -ms-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    background: linear-gradient(to right, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f32c6d', endColorstr='#cb1d95', GradientType=1 );
+
+    border-radius: 9px;
+    padding: 12px 25px;
+    
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-left: 50px;
+    max-width: 250px;
+    height: 46px;
+}
+
+.main__header__button i{
+    padding-left: 15px;
+    font-size: 20px;
+}
+.main__header__button:hover > i{
+    -webkit-animation: 0.1s tremor ease-out infinite;  
+    animation: 0.1s tremor ease-out infinite; 
+}
+/* -------------анимация тряски------------------------ */
+@-webkit-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        top:-1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+    50%, 100% {
+        left: 1px;
+        top: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+@-moz-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+@-ms-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+@-o-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+@keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+/* --------------------------------------- */
+@media (max-width: 965px){
+    .main__header__button{
+        height: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+@media (min-width: 767px){
+    
+    .menu__list{
+        display: flex;
+        align-items: center;
+    }
+    .menu__list > li{
+        padding: 2px 0px;
+    }
+}
+
+@media (max-width: 767px){
+    .menu__body a{
+        height: 46px;
+    }
+    .menu__body {
+        flex-direction: column;   
+    }
+    .main__header__button{
+        margin-top: 30px;
+    }
+    .menu__icon{
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+    .menu__icon span,
+    .menu__icon::before,
+    .menu__icon::after{
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease;
+        background-color: #333;
+    }
+    .menu__icon::before,
+    .menu__icon::after{
+        content: "";
+    }
+    .menu__icon::before{
+        top: 0;
+    }
+    .menu__icon::after{
+        bottom: 0;
+    }
+    .menu__icon span{
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+    .menu__icon._active span{
+        transform: scale(0) translate(0px, -50%);
+    }
+    .menu__icon._active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+    .menu__icon._active::after{
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);   
+    }
+
+    .menu__body{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.500);
+        
+        padding: 100px 30px 30px 30px;
+        transition: left 0.3s ease;
+        overflow: auto;
+    }
+    .menu__body._active{
+        left: 0;
+    }
+    
+    .menu__body::after{
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 70px;
+        z-index: 1;
+        background-color: rgb(255, 255, 255);
+    }
+    .menu__list > li{
+        text-align: center;
+        margin: 0px 0px 30px 0px;
+    }
+    .menu__list > li:last-child{
+        margin-bottom: 0;
+    }
+    .menu__link a{
+        font-size: 26px;
+    }
+
+    .header__logo{
+        width: 280px;
+        
+    }
+    .main__header__button{
+        display: flex;
+        justify-content: center;
+        margin: 25px auto;
+        max-width: 335px;
+    }
+    
+}
+
+
+.main__button:hover{
+    transform: scale(1.05);
+    color: #d3e014;
+}
+/* ----------MaIN-page------- */
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.main-page {
+    padding-top: 220px;
+}
+.main-page__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.main-page__wrapper img{
+    height: 100%;
+}
+.main-page__content {
+}
+.main-page__content p{
+    margin-bottom: 30px;
+}
+.main-page__content button{
+    padding: 15px 30px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    background-color: #77B2D3;
+    border-radius: 250px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Manrope-SemiBold';
+    font-size: 16px;
+    line-height: 26px;
+    cursor: pointer;
+}
+.main-page__content button:last-child{
+    margin-right: 0;
+}
+.main-page__content button:hover{
+    background-color: #25709b;
+}
+.main-page__content h1{
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 65px;
+}
+.main-page__content span{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.main-page__content__link {
+}
+
+@media screen and (max-width: 1200px){
+    .container, .header__container{
+        max-width: 1170px;
+        padding: 0px 15px;
+    }
+    .main-page__wrapper img{
+        width: 500px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+    
+}
+@media screen and (max-width: 900px){
+    .main-page__wrapper{
+        align-items: center;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+    .main-page__wrapper{
+        flex-direction: column;
+    }
+    .main-page__wrapper img{
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .main-page{
+        padding-top: 150px;
+    }
+}
+@media screen and (max-width: 540px){
+    .container{
+        max-width: 90%;
+    }
+    .main-page__content{
+        text-align:center;
+    }
+
+    
+}
+
+/* ---------------------- */
+.about-us {
+    padding-top: 150px;
+}
+.container {
+}
+.about-us__block {
+    max-width: 100%;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.200);
+    border-radius: 20px;
+}
+.about-us__block h2{
+    font-family: 'Manrope-SemiBold';
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    text-transform: uppercase;
+    
+}
+.about-us__block__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.about-us__characteristic {
+    
+}
+
+.about-us__characteristic:last-child{
+    border-right: none;
+    
+}
+
+.about-us__characteristic h3{
+    color: rgba(243,44,109,1);
+    color: -moz-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    color: -webkit-gradient(left top, right top, color-stop(0%, rgba(243,44,109,1)), color-stop(100%, rgba(203,29,149,1)));
+    color: -webkit-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    color: -o-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    color: -ms-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    color: linear-gradient(to right, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f32c6d', endColorstr='#cb1d95', GradientType=1 );
+
+    font-family: 'Manrope-Bold';
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+}
+.about-us__characteristic p{
+    text-align: center;
+}
+.about-us__characteristic span{
+    font-size: 28px;
+}
+
+@media screen and (max-width:992px){
+    
+    .about-us__characteristic{
+        width: 50%;
+        text-align: center;
+        border-right: none;
+        margin-bottom: 30px;
+        padding: 5px;
+    }
+    .about-us__block h2{
+        text-align: center;
+    }
+    .about-us__block{
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width:540px){
+    .about-us__block__wrapper{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .about-us__characteristic{
+        margin-bottom: 40px;
+    }
+    .about-us__characteristic:last-child{
+        margin-bottom: 0;
+    }
+    .about-us__block{
+        padding: 15px;
+    }
+}
+
+/* --------Услуги---------- */
+.our-services {
+    padding-top: 76px;
+}
+.container {
+}
+.our-services__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 41px;
+}
+.our-services h2{
+    font-family: 'Manrope-Bold';
+    font-size: 38px;
+    line-height: 48px;
+    text-transform: uppercase;
+    
+}
+.our-services__wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+   
+    border-radius: 15px;
+}
+.our-services__wrapper .main__button{
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+}
+.our-services__item {
+    display: flex;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    min-height: 350px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 15px;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.300);
+}
+.our-services__text{
+
+}
+.services__cost{
+    
+}
+
+.our-services__wrapper h3{
+    font-family: 'Manrope-ExtraBold';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #77B2D3;
+    color: #fff;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5px;
+}
+
+.services-list li{
+    margin-bottom: 5px;
+    text-align: left;
+    list-style-image: url(../img/Vector.png); /* Путь к изображению маркера */
+    list-style-position: inside;
+    font-size: 13.5px;
+
+}
+
+.services-list li:last-child{
+    margin-bottom: 0;
+}
+.services-list{
+    list-style-position: inside;
+}
+
+.services-list ul{
+    padding: 15px;
+}
+.main__button {
+}
+
+.our-services__wrapper p{
+    text-align: center;
+    vertical-align: center;
+}
+.our-services__wrapper span{
+    font-family: 'Manrope-ExtraBold';;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 24px;
+    color: rgba(243,44,109,1);
+    color: -moz-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    color: -webkit-gradient(left top, right top, color-stop(0%, rgba(243,44,109,1)), color-stop(100%, rgba(203,29,149,1)));
+    color: -webkit-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    color: -o-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    color: -ms-linear-gradient(left, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    color: linear-gradient(to right, rgba(243,44,109,1) 0%, rgba(203,29,149,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f32c6d', endColorstr='#cb1d95', GradientType=1 );
+}
+
+@media screen and (max-width: 1200px) {
+    .our-services__block{
+        justify-content: center;
+    }
+    .our-services__wrapper{
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+    .our-services h2{
+        text-align: center;
+    } 
+}
+
+@media screen and (max-width: 540px) {
+
+    .our-services__wrapper{
+        width: 400px;
+        margin-right: 0;
+    }
+    .services-list{
+        margin: 0 auto;
+    }
+    .our-services__item{
+        padding-top: 20px;
+    }
+}
+
+/* ----------------CONSULTATION----------- */
+.consultation {
+    padding-top: 90px;
+}
+.consultation__wrapper{
+    display: flex;
+    align-items: center;
+}
+.consultation__wrapper img{
+    flex: 0 0 45%;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.300);
+}
+.consultation__text {
+    padding-right: 30px;
+}
+
+.consultation-form{
+
+}
+.consultation-form .consultation-form__input{
+    width: 48%;
+    height: 59px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.300);
+    border-radius: 7px;
+    /* outline: 1px solid rgba(0, 0, 0); */
+
+    padding-left: 20px;
+
+    font-family: 'Manrope-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333333;
+    padding-left: 19px;
+    margin-bottom: 20px;
+}
+.consultation-form .consultation-form__input::focus{
+    outline: none;
+}
+.input__container{
+    width: 100%;
+}
+.input__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.consultation-form textarea{
+    width: 100%;
+    height: 141px;
+    resize: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.300);
+    border-radius: 7px;
+    font-family: 'Manrope-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333333;
+    padding: 10px 0px 0px 19px;
+}
+.consultation__text h2{
+    font-family: 'Manrope-Bold';
+    font-size: 38px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+.consultation__text label{
+    padding: 10px 0px;
+}
+.consultation__text p{
+    margin: 22px 0px;
+}
+
+/* ------------------CHECKBOX---------------- */
+.input__checkbox{
+    margin-top: 25px;
+    margin-right: 7px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.input__checkbox+label{
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.input__checkbox+label::before{
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.input__checkbox:checked+label::before {
+    border-color: #b05bd1;
+    background-color: #b05bd1;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.input__checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b05bd1;
+}
+
+.input__checkbox:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(144, 85, 156, 0.25);
+}
+.input__checkbox:focus:not(:checked)+label::before {
+    border-color: #b982cf;
+}
+.input__checkbox:disabled+label::before {
+    background-color: #b982cf;
+}
+
+/* ------------------------------- */
+.consultation-form button{
+    margin-top: 25px;
+}
+
+@media screen and (max-width:1120px){
+    .input__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .consultation-form .consultation-form__input{
+        width: 100%;
+    }
+    .consultation__wrapper img{
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .consultation__wrapper{
+        flex-direction: column;
+    }
+    .consultation__text{
+        padding-right: 0;
+        padding: 0px 50px;
+    }
+    .consultation__wrapper img{
+        max-width: 100%;
+        min-height: auto;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .consultation__text{
+        padding: 0;
+        text-align: center;
+    }
+    .consultation-form{
+        padding: 0px 10px;
+    }
+}
+/* ---------------------works------------ */
+.our-works {
+    padding-top: 125px;
+    padding-bottom: 90px;
+}
+.our-works h2{
+    font-family: 'Manrope-SemiBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    text-transform: uppercase;
+    padding-left: 30px;
+}
+.our-works__blocks {
+    display: flex;
+    justify-content: space-between;
+    
+    padding-top: 40px;
+}
+.our-works__item {
+    min-width: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.050);
+    border-radius: 15px;
+    padding: 5px 0px 20px 0px;
+}
+.our-works__item img{
+    padding: 0px 0px 0px 25px;
+    cursor: pointer;
+}
+.our-works__item .Macys{
+    padding: 25px 0px 26px 25px;
+    cursor: pointer;
+}
+.our-works__item>p{
+    font-size: 16px;
+    padding: 0px 25px;
+}
+.our-works__item>h3{
+    padding: 0px 25px;
+}
+.our-works__results__block {
+    margin: 24px 0px;
+    background-color: #dadadb;
+    padding: 20px 25px;
+}
+.our-works__results__block h3{
+    font-family: 'Manrope-Bold';
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+.our-works__result__wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 7px 0px;
+}
+.our-works__result {
+    margin-right: 33px;
+}
+.our-works__result:last-child{
+    margin-right: 0;
+}
+.our-works__result h4{
+    font-family: 'Manrope-Bold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.our-works__system{
+    font-family: 'Manrope-Bold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .our-works__blocks{
+        flex-direction: column;
+    }
+    .our-works__item{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .our-works__result__wrapper{
+        flex-direction: column;
+    }
+
+    .our-works__result {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .our-works h2{
+        text-align: center;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 382px) {
+    .our-works__item img{
+        padding: 0;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .our-works__item .Macys{
+        padding: 15px 0px;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .our-works__item>p{
+        padding: 0px 15px;
+        text-align: left;
+    }
+    .our-works__system{
+        text-align: center;
+    }
+}
+
+/* -----------footer--------------------- */
+.footer-information {
+    padding: 60px 0px;
+    background-color: #fff;
+}
+.footer-information__block{
+    display: flex;
+    justify-content: space-between;
+}
+.feedback {
+
+}
+.feedback p{
+    margin: 5px 0px 20px 0px;
+}
+.main__button {
+    
+}
+.information {
+    width: 200px;
+}
+.services {
+    width: 200px;
+}
+.footer-list h2{
+    font-family: 'Manrope-SemiBold';
+    font-style: bold;
+    font-size: 16px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #1d1c1c;
+    margin-bottom: 15px;
+}
+.footer-list li{
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.footer-list li:hover{
+    transform: scale(1.1);
+    color: #b05bd1;
+}
+.rights {
+    background-color: #2D2D2D;
+    text-align: center;
+}
+.rights p{
+    padding: 10px 0px;
+    color: #fff;
+    font-size: 15px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .footer-information__block{
+        flex-direction: column;
+        justify-content: none;
+    }
+    .feedback{
+        max-width: 100%;
+       margin: 0 auto;
+       margin-bottom: 30px;
+       text-align: center;
+    }
+    .feedback img{
+        max-width: 100%;
+        display: block;
+        height: auto;
+    }
+    .information{
+        
+    }
+    .services {
+        
+    }
+    .footer-list{
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .footer-list h2{
+        font-family: 'Manrope-Bold';
+    }
+}
+@media screen and (max-width: 400px) {
+    .footer-list{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        
+    }
+    .feedback{
+        margin-bottom: 50px;
+    }
+}
+
+/* ----------------slider====--=========== */
+/* Слайдер */
+.slick-slider{
+
+}
+.slider__container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{
+
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{
+
+}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    border-radius: 15px;
+}
+/* Слайд */
+.slick-slide{
+    margin: 0px 10px;
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+/* Конкретный слайдер */
+.slider {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    font-size: 0;
+    width: 17px;
+    height: 32px;
+    cursor: pointer;
+}
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url(../img/left.png) 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url(../img/right.png) 0 0 / 100% no-repeat;
+}
+.slider__item{
+    
+}
+
+/* -------POPUP----------------- */
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.600);
+    top: 0;
+    left: 0;
+    z-index: 30;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+.popup.open .popup__content{
+    transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+    opacity: 1;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+.popup__content {
+    background-color: #E6E6E6;
+    width: 550px;
+    padding: 50px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+.popup__close {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    font-size: 20px;
+    color: #1d1c1c;
+}
+.popup__close img{
+    width: 18px;
+}
+.popup__title {
+    width: 400px;
+    font-size: 36px;
+    line-height: 1.23;
+    margin: 0px auto 1em auto;
+    text-align: center;
+    font-family: 'Manrope-SemiBold';
+}
+.popup__text {
+}
+
+.popup__form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.popup__phone-label{
+    font-family: 'Manrope-Regular';
+    font-size: 20px;
+    line-height: 1.45;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 5px;
+}
+.popup__input-name, .popup__input-number{
+    max-width: 100%;
+    padding: 5px 0px 10px 0px;
+    margin: 0px 0px 20px 0px;
+    outline: none;
+    color: rgb(34, 33, 33);
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #B6B6B6;
+}
+.country-select{
+    content: "";
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: red;
+}
+.country-select img{
+    width: 30px;
+    height: 20px;
+}
+.popup__select__wrap{
+    display: flex;
+    max-width: 100%;
+}
+.popup__input__phone{
+    /* width: 425px; */
+    
+}
+
+.label-for-name{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    font-size: 17px;
+    transition: top 0.2s;
+    color: rgb(94, 93, 93);
+}
+.popup__input-name:focus ~ .label-for-name, .popup__input-name:valid ~ .label-for-name{
+    top: -13px;
+    font-size: 14px;
+}
+
+.label-for-number{
+    position: absolute;
+    top: 62px;
+    left: 0;
+    font-size: 17px;
+    transition: top 0.2s;
+    color: rgb(94, 93, 93);
+}
+.popup__input-number:focus ~ .label-for-number, .popup__input-number:valid ~ .label-for-number{
+    top: 44px;
+    font-size: 14px;
+}
+
+
+.popup__input:last-child{
+    margin-bottom: 0;
+}
+.popup__input::placeholder{
+    font-size: 17px;
+    vertical-align: middle;
+}
+.popup__form__btn{
+    max-width: 100%;
+    padding: 14px 0px;
+    cursor: pointer;
+    font-family: 'Manrope-Bold';
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 7px;
+    background-color: transparent;
+    position: relative;
+    overflow-x: hidden;
+}
+.popup__form__btn .flare{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 70px;
+    transform: skewX(-55deg);
+    animation: flare 3s infinite linear;
+    background: linear-gradient(90deg, rgba(219, 215, 215, 0.1), rgba(255, 255, 255, 0.5));
+}
+@keyframes flare {
+    0% {
+        left: -150%;
+    }
+    100%{
+        left: 150%;
+    }
+}
+
+.popup__checkbox-form{
+    display: flex;
+    margin-bottom: 20px;
+}
+.popup__checkbox-form input{
+    margin-right: 7px;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .popup__content {
+        width: 100%;
+        min-height: 100vh;
+    }
+    .popup__title{
+        max-width: 100%;
+        text-align: center;
+    }
+    .popup__body{
+        padding: 0;
+    }
+    .popup__close{
+        top: 20px;
+        right: 20px;
+    }
+    .popup__close img{
+        width: 25px;
+    }
+    .popup__content{
+        padding: 50px 20px;
+    }
+}
