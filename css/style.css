@@ -1350,7 +1350,7 @@ body._lock footer{
 
 .popup__checkbox-form{
     display: flex;
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
 .popup__checkbox-form input{
     margin-right: 7px;
