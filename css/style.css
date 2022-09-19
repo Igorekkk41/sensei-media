@@ -70,12 +70,26 @@ body._lock{
 body.lock{
     overflow: hidden;
 }
-body._lock section{
-    filter: blur(0.35rem); /*Затемнение фона*/
+/* body._lock section{
+    filter: blur(0.35rem); 
 } 
 body._lock footer{
-    filter: blur(0.35rem); /*Затемнение фона*/
-} 
+    filter: blur(0.35rem); 
+}  */
+
+.circle{
+    position: absolute;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    transition: transform .25s;
+}
+.circle:active{
+    transform: translate(-50%, -50%) scale(.5s);
+}
 /* --------------header-------- */
 .header {
     position: fixed;
@@ -85,7 +99,6 @@ body._lock footer{
     z-index: 10;
     background-color: #fff;
     box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.150);
-   
 }
 .header__container {
     max-width: 1200px;
@@ -128,17 +141,30 @@ body._lock footer{
 
 
 
-.menu__link a{
+.menu__link{
     color: rgb(0, 0, 0);
     font-size: 16px;
     transition: all 0.2s ease;
 }
-.menu__link a:hover{
-    
+.menu__link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: all 0.3s ease 0s;
+    background-color: #b05bd1;
+}
+.menu__link:hover::after{
+    width: 100%;
+    color: #b05bd1;
+}
+.menu__link:hover{
     color: #b05bd1;
 }
 .menu__list li:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 .main__button {
     background: rgba(243,44,109,1);
@@ -379,6 +405,13 @@ body._lock footer{
     color: #d3e014;
 }
 /* ----------MaIN-page------- */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.main__content{
+    flex: 1 1 auto;
+}
 .container{
     max-width: 1170px;
     margin: 0 auto;
@@ -609,6 +642,7 @@ body._lock footer{
     justify-content: space-between;
     padding: 15px 15px;
     box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.300);
+    background-color: #fff;
 }
 .our-services__text{
 
@@ -785,6 +819,15 @@ body._lock footer{
 }
 
 /* ------------------CHECKBOX---------------- */
+.form-button{
+    color: white;
+    width: 150px;
+    text-transform: uppercase;
+    font-family: 'Manrope-Bold';
+    font-style: bold;
+    font-weight: 300;
+    font-size: 14px;
+}
 .input__checkbox{
     margin-top: 25px;
     margin-right: 7px;
@@ -1266,6 +1309,8 @@ body._lock footer{
     background-color: rgba(0, 0, 0, 0);
     border-bottom: 2px solid #B6B6B6;
 }
+
+
 .country-select{
     content: "";
     display: flex;
@@ -1311,6 +1356,7 @@ body._lock footer{
     top: 44px;
     font-size: 14px;
 }
+
 
 
 .popup__input-number{
@@ -1379,4 +1425,140 @@ body._lock footer{
     .popup__content{
         padding: 50px 20px;
     }
+}
+
+@media (max-width: 390px){
+    .request__item p{
+        margin-bottom: 100px;
+    }
+}
+
+
+.label__file-item{
+    margin-top: 20px;
+}
+.file__item{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.file__input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+.file__Button{
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    border-radius: 40px;
+    justify-content: center;
+    background-color: #25709b;
+    padding: 0px 30px;
+    color: #fff;
+    margin-top: 7px;
+}
+.file__preview{
+    display: inline-block;
+    max-width: 100px;
+    padding: 10px 0px 0px 0px;
+}
+.file__preview img{
+    max-width: 100%;
+}
+
+
+
+/* -- */
+.page__action{
+}
+.page__reset{
+    opacity: 0;
+    visibility: hidden;
+}
+.page__reset.active{
+    opacity: 1;
+    visibility: visible;
+}
+.page__reset::before{
+    content: "X";
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    font-size: 7px;
+    border-radius: 50%;
+    line-height: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: #666;
+}
+/* темы */
+html.dark body{
+    background-color: #6e6e6e;
+}
+html.dark .header{
+    background-color: #4e4a4a;
+}
+html.dark .menu__link{
+    color: #d3d3d3;
+}
+html.dark .footer-information{
+    background-color: #4e4a4a;
+    color: rgb(182, 180, 180);
+}
+html.dark .footer-information h2{
+    color: rgb(153, 151, 151);
+}
+html.dark body{
+    color: #1d1c1c
+}
+html.dark .about-us__block{
+    background-color: rgb(148, 147, 147);
+}
+html.dark .our-services__item{
+    background-color: rgb(148, 147, 147);
+}
+html.dark .our-services__wrapper h3{
+    background-color: #337eaa;
+    color: #fff;
+}
+html.dark .main-page__content__link{
+    background-color: #337eaa;
+}
+html.dark .main-page__content__link:hover{
+    background-color: #27678b;
+}
+html.dark .input__container input{
+    background-color: rgb(148, 147, 147);
+}
+html.dark .input__container input::placeholder{
+    color: #fff;
+}
+html.dark .input__container textarea{
+    background-color: rgb(148, 147, 147);
+}
+html.dark .input__container textarea::placeholder{
+    color: #fff;
+}
+html.dark .our-works__item{
+    background-color: #7a7373;
+}
+html.dark .our-works__results__block{
+    background-color: #a5a2a2;
+}
+
+
+html.dark .page__theme{
+    background: url(../img/sun.png) 0 0 / 100% no-repeat;
+}
+html.light .page__theme{
+    background: url(../img/moon.png) 0 0 / 100% no-repeat;
 }
